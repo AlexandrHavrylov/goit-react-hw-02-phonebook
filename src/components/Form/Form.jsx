@@ -1,7 +1,5 @@
-import { Label } from "components/Contacts/Contacts.styled";
-import { Button } from "components/Contacts/Contacts.styled";
-import { Input } from "components/Contacts/Contacts.styled";
-import { StyledForm } from "components/Contacts/Contacts.styled";
+import { Label, Button, Input, StyledForm } from "styles/Form.styled";
+
 import { PropTypes } from "prop-types";
 import React, { Component } from "react";
 

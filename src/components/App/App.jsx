@@ -3,6 +3,8 @@ import { Form } from "components/Form/Form";
 import { Contacts } from "components/Contacts/Contacts";
 import { v4 as uuidv4 } from "uuid";
 import { Filter } from "components/Filter/Filter";
+import { MainContainer } from "styles/App.styled";
+import { Title } from "../../styles/App.styled";
 
 export class App extends Component {
   state = {
@@ -54,8 +56,8 @@ export class App extends Component {
     const filterContacts = this.getFilterContacts();
 
     return (
-      <div>
-        <h1>Phonebook</h1>
+      <MainContainer>
+        <Title>Phonebook</Title>
         <Form onSubmit={this.addContact} />
         <Filter value={filter} onFilterChange={this.handlerOnFilterChange} />
 
@@ -63,7 +65,7 @@ export class App extends Component {
           contacts={filterContacts}
           onDeleteContact={this.handlerOnDelteContact}
         />
-      </div>
+      </MainContainer>
     );
   }
 }

@@ -1,8 +1,12 @@
+import { Input, Label } from "styles/Form.styled";
 import React from "react";
+import { Section } from "styles/App.styled";
 
 export const Filter = ({ value, onFilterChange }) => (
-  <label>
-    Find contatcs by Name
-    <input type="text" value={value} onChange={onFilterChange} />
-  </label>
+  <Section>
+    <Label>
+      Find contatcs by Name
+      <Input type="text" value={value} onChange={onFilterChange} />
+    </Label>
+  </Section>
 );
